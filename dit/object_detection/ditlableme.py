@@ -91,6 +91,7 @@ def main():
 
     # Create output folder if not exists
     os.makedirs(args.output_folder, exist_ok=True)
+    json_output_folder = os.path.join(args.output_folder, "json_output")
     os.makedirs(args.json_output_folder, exist_ok=True)
 
     # Step 1: instantiate config
